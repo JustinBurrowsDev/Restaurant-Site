@@ -18,6 +18,5 @@ Coding together at the same time really did help, We didn't use the entire day t
 
 
 
-![React Photo Album 1](reactPhotoAlbum1.png)
-![React Photo Album 2](reactPhotoAlbum2.png)
-![React Photo Album 3](reactPhotoAlbum3.png)
+![Rest Site 1](restsite.png)
+
