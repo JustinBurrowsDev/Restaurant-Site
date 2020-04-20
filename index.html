@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css.map"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/bd2fa6f0fc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="navbar">
+            <div class=logoContainer>
+                <img class=logo src="assets/LÊ J iSÔN WHITE.png">
+            </div>
+            <ul>
+                <li>MENU</li>
+                <li>ABOUT US</li>
+                <li>RESERVATIONS</li>
+            </ul>
+        </div>
+        <div class="mainPic">
+            <img src="assets/restaurant.png">
+        </div>
+        <h1>Appetizers</h1>
+        <div class="appetizersContainer">
+        </div>
+        <h1>Entrees</h1>
+        <div class="entreesContainer"></div>
+        </div>
+        <h1>Desserts</h1>
+        <div class="dessertsContainer w3-animate-opacity">
+        </div>
+
+        <div class="elfsight-app-7e75116f-91aa-4431-b89e-f393f6116be8">
+        </div>
+
+        <div class='slider'>
+            <div class="item"><img src="assets/dining.jpg"></div>
+            <div class="item"><img src="assets/dining2.jpg"></div>
+            <div class="item"><img src="assets/dish.jpg"></div>
+            <div class="item"><img src="assets/fish.jpg"></div>
+            <div class="item"><img src="assets/flower.jpeg"></div>
+            <div class="item"><img src="assets/food 1.jpg"></div>
+            <div class="item"><img src="assets/ice_cream.jpg"></div>
+        </div>
+
+        <footer>
+            <div>
+                <h1>Come Join Us</h1>
+                <h5>ADRESS: 4356 Yummy Way, Las Vegas NV</h5>
+                <h5>PHONE: 702-207-7777</h5>
+            </div>
+            <div class="Map" id="map">
+            </div>
+
+        </footer>
+    </main>
+    <script>
+        // Initialize and add the map
+        function initMap() {;
+            // The map, centered at Uluru
+            let map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 17,
+                    center: {
+                        lat: 36.158470,
+                        lng: -115.152489
+                    }
+                });
+            // The marker, positioned at Uluru
+            let marker = new google.maps.Marker({
+                position: {
+                    lat: 36.158470,
+                    lng: -115.152489
+                },
+                map: map
+            });
+            let infoWindow = new google.maps.InfoWindow({
+                content: '<h1>Le Jaison</h1>'
+            });
+            marker.addListener('click', function() {
+                infoWindow.open(map, marker);
+            });
+        }
+    </script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>å
+    <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtdJ2GEaA3SAFGmkghwzvopgEnd1lIQ1g&callback=initMap"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./main.js" async defer></script>
+</body>
+
+</html>
