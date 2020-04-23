@@ -1,6 +1,6 @@
 # LeJaison-Restaurant-Website
 
-## Challenges I Faced? 
+## Challenges I Faced?  
 
 Working in a team is extremely beneficial to the project overall however, I need to careful how I communicate things to avoid miscommunication. Conceptually we know what we wanted to do and it sounded good in theory but implementation is an entirely different matter. I want to be able to incorporate Google maps and I have to do some research on it. 
 
